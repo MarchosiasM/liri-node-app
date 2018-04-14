@@ -21,3 +21,20 @@ TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret
 TWITTER_ACCESS_TOKEN_KEY=your-access-token-key
 TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 ```
+
+## Commands
+
+```
+node liri.js my-twitter //=> returns data from the twitter key you put in the dotenb file
+
+node liri.js spotify-this-song <arg>
+
+//=> Reaches out to the spotify API to return some information regarding the song, including album, artist, and release year.
+
+node liri.js movie-this <arg>
+
+//=> Returns information from your argument pulled from OMDB
+
+movie liri.js do-what-it-says 
+
+//=> Will read the command in "random.txt" and operate based on those args. Default provided is a "spotify-this-song" arg
